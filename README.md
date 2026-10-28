@@ -7,7 +7,14 @@ This repository hosts the class survey dataset for **HW10: Sentiment Lab** in CM
 ## Quick Start (R)
 
 ```r
-dat <- read.csv("https://raw.githubusercontent.com/YingWana/cmda2014-hw10/main/classNoMissPolar.csv")
+# Load the package for importing data
+library(rio)
+
+# URL of the Excel file hosted on GitHub
+url <- "https://raw.githubusercontent.com/YingWana/cmda2014-hw10/main/classNoMissPolar.xlsx"
+
+# Import the Excel file into R
+dat <- import(url)
 
 ```
 
@@ -18,7 +25,7 @@ dat <- read.csv("https://raw.githubusercontent.com/YingWana/cmda2014-hw10/main/c
 | | |
 |---|---|
 | **File** | `classNoMissPolar.csv` |
-| **Records** | 86 students |
+| **Records** | 61 students |
 | **Variables** | 43 |
 | **Format** | Comma-separated values (CSV) |
 
